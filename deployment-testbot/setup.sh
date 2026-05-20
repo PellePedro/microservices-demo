@@ -12,7 +12,7 @@ set -e
 cd "$(dirname "$0")"
 SCRIPT_DIR="$(pwd)"
 
-REPO_PATH="${BOUTIQUE_REPO_PATH:-$(dirname $(dirname "$SCRIPT_DIR"))}"
+REPO_PATH="${BOUTIQUE_REPO_PATH:-$(dirname "$SCRIPT_DIR")}"
 
 # ─── Health check helper ───
 wait_for_url() {
